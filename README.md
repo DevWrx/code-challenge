@@ -55,7 +55,7 @@ but the following public API should be exposed.
 _The examples here are in JavaScript but the syntax of your solution
 will vary based on the language you chose._
 
-### Underwriting the Loan
+### Underwriting a Loan
 
 ```javascript
 var loanApplication = new LoanApplication();
@@ -108,7 +108,7 @@ for loan offers.
   </tbody>
 </table>
 
-### Create a New Loan
+### Issue a New Loan
 
 ```javascript
 var loan = new Loan();
@@ -123,9 +123,14 @@ loan.maturity_date = new Date(2020,1,1);
 
 ### Apply a Payment
 
-
+```javascript
+loan.applyPayment({ amount: 300, date: new Date(2016, 1, 1) });
+```
 
 ### Query the Loan for Details
+
+
+
 
 ## Additional Notes
 
